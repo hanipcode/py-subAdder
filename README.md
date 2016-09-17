@@ -3,9 +3,9 @@ Simple Subtitle Synchronization. Only support adding and reducing time in the su
 
 # Usage
 ##normal usage
-*Download the sub-adder file
-*run `chmod +x sub-adder` in the download destination
-*use the sub-adder with format:
+1. Download the sub-adder file
+2. run `chmod +x sub-adder` in the download destination
+3. use the sub-adder with format:
 > `sub-add [filename] [time-to-add]
 
 ##reducing instead of adding time
