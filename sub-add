@@ -45,8 +45,10 @@ def makesubtitle(src,des,num):
 
 def errorUsage(errstr):
     usage = """ 
-                Python Subtitle Adder
-                Usage : sub-add [filename] [time to add]
+    Python Subtitle Adder
+    Usage : sub-add [filename] [time to add]
+    To reduce the time instead of adding, use -(negative)
+    ex: sub-add filename.srt -10
             """
     error = "Error : "+errstr
     return error+usage
@@ -59,7 +61,8 @@ filename = sys.argv[1]
 num = float(sys.argv[2])
 fopen = open(filename)
 folder = pathspliter(filename)
-newsub = open(folder+os.sep+filename+".srt","w+r")
+print filename,folder
+newsub = open(os.curdir+os.sep+"newsub.srt","w+r")
 
 makesubtitle(fopen,newsub,num)
 
