@@ -2,6 +2,7 @@
 Simple Subtitle Synchronization. Only support adding and reducing time in the subtitle
 
 # Usage
+**Python 2.7.x** is needed to use this script.
 ##normal usage
 1. Download the sub-adder file
 2. run `chmod +x sub-add` in the download destination
